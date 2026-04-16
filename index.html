@@ -208,6 +208,38 @@ footer{background:var(--ink);padding:1.75rem 2.5rem;border-top:0.5px solid var(-
   .bh-sec,.pm-sec,.cta-sec{padding:4rem 1.25rem}
   footer{flex-direction:column;align-items:flex-start}
 }
+
+.adv-sec{background:var(--ink)}
+.adv-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3.5rem}
+.adv-panel{border:0.5px solid var(--border);padding:2rem;position:relative;overflow:hidden}
+.adv-panel-title{font-family:"Barlow Condensed",sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--white);margin-bottom:0.5rem}
+.adv-panel-sub{font-size:0.72rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem}
+.adv-panel-body{font-size:0.84rem;font-weight:300;line-height:1.72;color:rgba(255,255,255,0.58)}
+.adv-panel-body p{margin-bottom:0.8rem}
+.adv-panel-body p:last-child{margin-bottom:0}
+.adv-panel-body strong{color:var(--white);font-weight:500}
+.adv-badge{display:inline-block;font-size:0.58rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:0.25rem 0.6rem;border:0.5px solid;margin-bottom:1rem}
+.adv-badge-hyp{color:rgba(200,151,62,0.8);border-color:rgba(200,151,62,0.4);background:rgba(200,151,62,0.06)}
+.adv-badge-obs{color:rgba(255,255,255,0.5);border-color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.03)}
+.adv-polar-bar{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.adv-polar-line{height:6px;border-radius:3px;flex:1}
+.adv-polar-label{font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;width:5rem;text-align:right;color:rgba(255,255,255,0.45)}
+.case-sec{background:var(--ink2)}
+.case-card{background:var(--card-bg);border:0.5px solid var(--border);padding:2rem;position:relative;overflow:hidden;margin-top:3rem}
+.case-card::before{content:"Jan 14";position:absolute;top:-0.75rem;right:0.75rem;font-family:"Barlow Condensed",sans-serif;font-size:5rem;font-weight:800;color:rgba(200,151,62,0.06);line-height:1;pointer-events:none}
+.case-header{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:start;margin-bottom:2rem}
+.case-eyebrow{font-family:"Barlow Condensed",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.22em;color:var(--gold);text-transform:uppercase;margin-bottom:0.5rem}
+.case-title{font-family:"Barlow Condensed",sans-serif;font-size:1.6rem;font-weight:800;text-transform:uppercase;line-height:1.1;margin-bottom:0.75rem}
+.case-intro{font-size:0.86rem;font-weight:300;line-height:1.72;color:rgba(255,255,255,0.6)}
+.case-disclaimer{font-size:0.72rem;font-style:italic;color:rgba(255,255,255,0.3);margin-top:0.75rem}
+.case-timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;border:0.5px solid var(--border)}
+.case-milestone{background:var(--card-bg);padding:1.25rem 1rem;border-right:0.5px solid var(--border);text-align:center}
+.case-milestone:last-child{border-right:none}
+.case-ms-time{font-family:"Barlow Condensed",sans-serif;font-size:1.3rem;font-weight:800;color:var(--gold);line-height:1;margin-bottom:0.3rem}
+.case-ms-desc{font-size:0.72rem;font-weight:300;line-height:1.45;color:rgba(255,255,255,0.5)}
+.testi-grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:3rem}
+@media(max-width:900px){.adv-grid{grid-template-columns:1fr}.case-timeline{grid-template-columns:1fr 1fr}.case-header{grid-template-columns:1fr}.testi-grid-2{grid-template-columns:1fr}}
+@media(max-width:680px){.case-timeline{grid-template-columns:1fr}.case-milestone{border-right:none;border-bottom:0.5px solid var(--border)}}
 </style>
 </head>
 <body>
@@ -396,6 +428,8 @@ footer{background:var(--ink);padding:1.75rem 2.5rem;border-top:0.5px solid var(-
         <div class="sci-claim"><div class="sci-ct">Sympathetic Activation Without Emotional Trigger</div><div class="sci-cb">Vertical posture physically triggers the sympathetic nervous system &mdash; all 603 motor muscles on standby &mdash; without cortisol, elevated resting heart rate, or the adrenal discharge of a fear-based Fight-or-Flight response.</div></div>
         <div class="sci-claim"><div class="sci-ct">Global Muscular Integration Along Tensional Lines</div><div class="sci-cb">True functional training must engage complete tensional lines &mdash; contiguous muscle chains from one limb through the torso to another. G-NAT is the only system designed to activate these lines involuntarily and simultaneously.</div></div>
         <div class="sci-claim"><div class="sci-ct">EPOC &mdash; Oxygen Restoration, Not Just Fat Burning</div><div class="sci-cb">When 200+ muscles need to restore oxygen simultaneously, the body's energy demand stays elevated for up to 24 hours. It's the energy cost of bringing your entire system back to normal. You burn 2,000 calories in a day &mdash; you'll be running at 3,000 pace through the following day.</div></div>
+        <div class="sci-claim"><div class="sci-ct">Sustained Sympathetic State &mdash; Biometric Monitoring Data</div><div class="sci-cb">Polar biometric monitoring during a G-NAT session captured heart rate and autonomic response data. The unexpected finding: parasympathetic activity did not return to baseline after dismounting. The sustained sympathetic state persisted beyond the session end. This is observational data, not a controlled clinical study &mdash; but it has not been observed in equivalent conventional exercise contexts.</div></div>
+        <div class="sci-claim"><div class="sci-ct">Stem Cell Egress &mdash; An Open Research Hypothesis</div><div class="sci-cb">Published research has documented that sympathetic nervous system activation can trigger stem cell egress from bone marrow into the bloodstream. Whether G-NAT's specific form of clean sympathetic activation produces this effect is an open question not yet formally studied. What practitioners have observed is that rehabilitation timelines appear significantly compressed &mdash; in some reported cases by approximately half. The mechanism is not established. The outcomes are being documented.</div></div>
         <div class="sci-claim"><div class="sci-ct">Brandon Is Pursuing an Australian Study</div><div class="sci-cb">The US lab extended their study by six unpaid weeks because the results exceeded expectations. Brandon is actively working to establish equivalent independent verification here in Australia.</div></div>
       </div>
       <div class="sci-lab">
@@ -405,6 +439,115 @@ footer{background:var(--ink);padding:1.75rem 2.5rem;border-top:0.5px solid var(-
           <p><strong>Metabolism increased 57%</strong> one hour after a standard G-NAT session. <strong>24% above baseline</strong> remained twenty-four hours later &mdash; results not observed in any comparable horizontal exercise protocol.</p>
           <p><strong>Joint compression forces were measurably lower</strong> during G-NAT movements than equivalent horizontal exercises, while surrounding muscle activation was significantly higher.</p>
           <p><strong>Balance, coordination and neurological response times</strong> all improved within the testing window &mdash; confirming nervous system adaptation beyond simple strength gains.</p>
+          <p style="margin-top:1.25rem;padding-top:1.25rem;border-top:0.5px solid var(--border);font-size:0.76rem;color:rgba(255,255,255,0.35);font-style:italic;">Welltec findings represent independent formal laboratory testing. The Polar biometric data, stem cell egress hypothesis, and HGH protocol observations below represent practitioner-observed outcomes and preliminary monitoring data &mdash; not peer-reviewed clinical claims.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="adv-sec">
+  <div class="si">
+    <div class="slabel">Advanced Observations</div>
+    <h2 class="stitle">What the Data Suggests &mdash;<br><em>Frontiers Still Being Mapped</em></h2>
+    <p class="sbody">The following represent practitioner observations, preliminary biometric data, and connections to published research. They are presented honestly &mdash; as promising signals, not established clinical claims.</p>
+    <div class="adv-grid">
+
+      <div class="adv-panel">
+        <div class="adv-badge adv-badge-obs">Observational Biometric Data</div>
+        <div class="adv-panel-title">The Polar Data: You Don't Bounce Back Out</div>
+        <div class="adv-panel-sub">Sustained Sympathetic State After Dismounting</div>
+        <div class="adv-panel-body">
+          <p>At a fitness trade show, Polar equipment was used to monitor a subject's heart rate and autonomic nervous system response during a G-NAT session. The data showed what was expected: heart rate climbing immediately upon mounting.</p>
+          <p>What was not expected: <strong>the parasympathetic indicator &mdash; the line that should recover when a stressor ends &mdash; did not return to baseline after the subject stepped off.</strong></p>
+          <p>In a conventional Fight-or-Flight response, once the threat passes, the body runs a quick internal check and returns to parasympathetic. On the G-NAT, that return did not happen during the monitoring window. The sustained state persisted beyond the session.</p>
+          <p>This is observational monitoring data, not a controlled clinical study. But it is consistent with what practitioners observe in clients&apos; sustained post-session performance, learning retention and neurological response &mdash; and it has not been seen in comparable conventional exercise contexts.</p>
+          <div style="margin-top:1.5rem">
+            <div class="adv-polar-bar"><span class="adv-polar-label">Heart rate</span><div class="adv-polar-line" style="background:linear-gradient(to right,rgba(220,80,60,0.3),rgba(220,80,60,0.9));height:8px"></div><span style="font-size:0.7rem;color:rgba(220,80,60,0.8);font-family:'Barlow Condensed',sans-serif;font-weight:700">SPIKES</span></div>
+            <div class="adv-polar-bar"><span class="adv-polar-label">Parasympathetic</span><div class="adv-polar-line" style="background:linear-gradient(to right,rgba(80,140,220,0.7),rgba(80,140,220,0.1));height:8px"></div><span style="font-size:0.7rem;color:rgba(80,140,220,0.7);font-family:'Barlow Condensed',sans-serif;font-weight:700">DROPS &amp; HOLDS</span></div>
+            <p style="font-size:0.7rem;color:rgba(255,255,255,0.28);margin-top:0.75rem;font-style:italic">Schematic representation of observed biometric pattern. Not clinical data.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:2rem">
+
+        <div class="adv-panel">
+          <div class="adv-badge adv-badge-hyp">Open Research Hypothesis</div>
+          <div class="adv-panel-title">Stem Cell Egress &amp; Compressed Rehab</div>
+          <div class="adv-panel-sub">Published Research + Practitioner Observation</div>
+          <div class="adv-panel-body">
+            <p>Published peer-reviewed literature has documented that sympathetic nervous system activation can trigger <strong>stem cell egress</strong> &mdash; the movement of stem cells from bone marrow into the bloodstream, where they participate in tissue repair.</p>
+            <p>Whether G-NAT's specific form of clean sympathetic activation produces this effect has not been formally studied. What practitioners across the G-NAT network have independently observed is that <strong>rehabilitation timelines appear to compress significantly</strong> &mdash; in some reported cases by approximately half compared to standard protocols.</p>
+            <p>The mechanism is an open question. The outcomes are being documented. As G-NAT practitioners says: &ldquo;I can't claim we're releasing stem cells &mdash; but I can tell you we're cutting rehab times in half. Something is happening.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class="adv-panel">
+          <div class="adv-badge adv-badge-hyp">Advanced Protocol &mdash; Conditioned Clients Only</div>
+          <div class="adv-panel-title">Endogenous HGH Release</div>
+          <div class="adv-panel-sub">Your Own Growth Hormone, Triggered by Movement</div>
+          <div class="adv-panel-body">
+            <p>For vertically-conditioned clients, a specific advanced protocol &mdash; full exhaustion on the G-NAT followed by 15&ndash;20 minutes of rest &mdash; appears to trigger <strong>endogenous human growth hormone production</strong>.</p>
+            <p>The mechanism is consistent with established exercise physiology: deoxygenated blood processed through the kidneys signals the brain that the body is under significant demand. The brain responds by releasing HGH. G-NAT's whole-body activation makes this signal particularly potent.</p>
+            <p>High-intensity exercise as an HGH stimulus is well-documented in the literature. The specific G-NAT application has not been formally studied. What is clear: this is 100% endogenous &mdash; your own biology, triggered by your own movement. It will never show up on a drug test. Because it is you.</p>
+            <p style="font-size:0.76rem;color:rgba(255,255,255,0.35);font-style:italic">Note: this protocol requires prior vertical conditioning. Brandon assesses readiness individually.</p>
+          </div>
+        </div>
+
+        <div class="adv-panel">
+          <div class="adv-badge adv-badge-obs">Practitioner Observation</div>
+          <div class="adv-panel-title">Skill Acquisition While Sympathetic</div>
+          <div class="adv-panel-sub">Learning with Your Whole Body Present</div>
+          <div class="adv-panel-body">
+            <p>When the entire motor system is active and integrated, new movement patterns appear to be encoded more rapidly and completely. <strong>Train a new skill immediately after G-NAT &mdash; your whole body shows up to learn it</strong>, not just your conscious mind.</p>
+            <p>This has implications for sports coaching, occupational training, and physical therapy. The sustained sympathetic state post-session means the window of enhanced encoding extends beyond the G-NAT itself.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-sec">
+  <div class="si">
+    <div class="slabel">Case Study &mdash; Pat Franz, G-NAT Level 5 Trainer</div>
+    <h2 class="stitle">The Trainer's Knee:<br><em>Pat Franz's Recovery</em></h2>
+    <div class="case-card">
+      <div class="case-header">
+        <div>
+          <div class="case-eyebrow">Surgery Date</div>
+          <div class="case-title">January 14</div>
+          <div style="font-size:0.72rem;letter-spacing:0.12em;color:var(--gold);font-family:'Barlow Condensed',sans-serif;text-transform:uppercase">Knee Surgery &mdash; Pat Franz, G-NAT Level 5 Trainer</div>
+        </div>
+        <div>
+          <p class="case-intro">Pat Franz &mdash; G-NAT Level 5 trainer, one of only a handful in the world &mdash; underwent knee surgery and was told to do nothing for four weeks until his first physio appointment. He had a mobile G-NAT unit in his dining room. On day three post-surgery, he got on it.</p>
+          <p class="case-intro" style="margin-top:0.75rem">What follows is Pat's documented recovery progression &mdash; shared not as a guaranteed outcome, but as a first-person account of what happened when a Level 5 practitioner applied the system to his own rehabilitation. Every body is different. Every surgery is different. Brandon works with you individually to determine what is appropriate for your situation.</p>
+          <p class="case-disclaimer">This is a personal account of one individual's experience. It does not constitute medical advice. Always follow your surgeon's and physiotherapist's guidance.</p>
+        </div>
+      </div>
+      <div class="case-timeline">
+        <div class="case-milestone">
+          <div class="case-ms-time">Day 3</div>
+          <div class="case-ms-desc">Got on the G-NAT with brace on. Slow circles. Nursing it. Just getting movement back.</div>
+        </div>
+        <div class="case-milestone">
+          <div class="case-ms-time">Week 2.5</div>
+          <div class="case-ms-desc">Removed the brace &mdash; 3.5 weeks ahead of the surgeon's 6-week instruction. Quad connection re-established. Stabilisation confirmed.</div>
+        </div>
+        <div class="case-milestone">
+          <div class="case-ms-time">Week 4</div>
+          <div class="case-ms-desc">Wore brace to physio appointment as required. Took it off during session. Walked out without it. Never went back.</div>
+        </div>
+        <div class="case-milestone">
+          <div class="case-ms-time">Month 3</div>
+          <div class="case-ms-desc">Squatting 225 lbs. Documented on video. The physio never asked how the leg got that way.</div>
+        </div>
+        <div class="case-milestone">
+          <div class="case-ms-time">Month 4</div>
+          <div class="case-ms-time" style="font-size:1rem;margin-top:0.2rem">315 lbs+</div>
+          <div class="case-ms-desc">Surpassed 315 lb squats. Full progression documented. Recovery timeline: approximately half the standard expectation.</div>
         </div>
       </div>
     </div>
@@ -424,11 +567,7 @@ footer{background:var(--ink);padding:1.75rem 2.5rem;border-top:0.5px solid var(-
   <div class="si">
     <div class="slabel">From the Session Floor</div>
     <h2 class="stitle">What Happens When<br><em>People Get On It</em></h2>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <p class="testi-q">I had been told I could no longer train competitively after my knee surgery. Six weeks with Brandon and I'm back. The fact that my joints feel better after a session than before is something I'd never experienced with any other training.</p>
-        <div class="testi-a">Competitive Athlete, Border Region</div>
-      </div>
+    <div class="testi-grid-2">
       <div class="testi-card">
         <p class="testi-q">I'm a GP and I was sceptical. Eight sessions later, my lower back pain &mdash; which I've had for a decade &mdash; has reduced significantly. I've referred three patients. The science holds up and the results are faster than I expected.</p>
         <div class="testi-a">Medical Professional, Albury</div>
@@ -436,7 +575,16 @@ footer{background:var(--ink);padding:1.75rem 2.5rem;border-top:0.5px solid var(-
       <div class="testi-card">
         <p class="testi-q">I run a business and have two young kids. I had maybe 20 minutes a week for exercise. Twelve minutes with Brandon twice a week is more effective than the full gym routine I had before. I'm fitter than I was at 30.</p>
         <div class="testi-a">Business Owner, Wodonga</div>
-        <div class="testi-note">Replace with real client words &mdash; just run Otter AI next session.</div>
+        <div class="testi-note">Replace with real client words &mdash; run Otter AI at your next session.</div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-q">I gained between 7 and 10 kilograms since I started working with G-NAT. I was at 65 kilograms, essentially bed-ridden with sciatica. Now I'm at 75. People have been asking me if I take steroids. Not one time, not ever.</p>
+        <div class="testi-a">Brandon Kelley &mdash; G-NAT Level 3 Trainer</div>
+        <div class="testi-note">Brandon's own body composition transformation &mdash; sciatica recovery to 75kg.</div>
+      </div>
+      <div class="testi-card" style="background:var(--gold-dim);border-color:rgba(200,151,62,0.35)">
+        <p class="testi-q" style="color:rgba(255,255,255,0.75);font-style:normal;font-size:0.95rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.25">&ldquo;Muscle is the high-priced Hollywood girlfriend of your body. If you don't take her out, she will leave you. G-NAT turning every muscle on forces your body to maintain them.&rdquo;</p>
+        <div class="testi-a" style="margin-top:auto">Brandon Kelley</div>
       </div>
     </div>
   </div>
