@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brandon Kelley - G-NAT Vertical Training | Albury NSW</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0B0F1A;--ink2:#141A2A;--gold:#C8973E;--gold-light:#E8B86D;--gold-dim:rgba(200,151,62,0.10);--white:#FFFFFF;--muted:rgba(255,255,255,0.52);--border:rgba(200,151,62,0.22);--card-bg:rgba(255,255,255,0.03)}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:var(--ink);color:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 2.5rem;background:rgba(11,15,26,0.92);backdrop-filter:blur(14px);border-bottom:0.5px solid var(--border)}
+.nav-left{display:flex;flex-direction:column;gap:0.06rem}
+.nav-brand{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1rem;letter-spacing:0.08em;color:var(--gold);text-transform:uppercase}
+.nav-sub{font-size:0.63rem;letter-spacing:0.14em;color:rgba(255,255,255,0.3);text-transform:uppercase}
+.nav-cta{background:var(--gold);color:var(--ink);font-family:"DM Sans",sans-serif;font-weight:500;font-size:0.82rem;padding:0.55rem 1.4rem;border:none;cursor:pointer;text-decoration:none;transition:background 0.2s}
+.nav-cta:hover{background:var(--gold-light)}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:9rem 2.5rem 5rem;position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(200,151,62,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(200,151,62,0.05) 1px,transparent 1px);background-size:64px 64px}
+.hero-vline{position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:100%;background:linear-gradient(to bottom,transparent,rgba(200,151,62,0.22),transparent)}
+.hero-inner{position:relative;max-width:920px;margin:0 auto;width:100%}
+.hero-eyebrow{font-family:"Barlow Condensed",sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;margin-bottom:1.5rem;display:flex;align-items:center;gap:0.75rem}
+.hero-eyebrow::before{content:"";display:block;width:2rem;height:1px;background:var(--gold);flex-shrink:0}
+h1.hero-headline{font-family:"Barlow Condensed",sans-serif;font-size:clamp(3.8rem,11vw,8rem);font-weight:800;line-height:0.9;letter-spacing:-0.01em;text-transform:uppercase;margin-bottom:2rem}
+h1.hero-headline em{font-style:normal;color:var(--gold);display:block}
+.hero-sub{font-size:1.05rem;font-weight:300;line-height:1.7;color:rgba(255,255,255,0.65);max-width:560px;margin-bottom:1.25rem}
+.hero-quote{font-size:0.88rem;font-style:italic;font-weight:300;color:var(--gold-light);margin-bottom:2.5rem;padding-left:1rem;border-left:2px solid var(--gold);max-width:520px;line-height:1.65}
+.hero-cta-row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.btn-primary{background:var(--gold);color:var(--ink);font-family:"DM Sans",sans-serif;font-weight:500;font-size:0.92rem;padding:0.9rem 2rem;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s,transform 0.15s}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--white);font-family:"DM Sans",sans-serif;font-weight:400;font-size:0.92rem;padding:0.9rem 2rem;border:0.5px solid rgba(255,255,255,0.28);cursor:pointer;text-decoration:none;display:inline-block;transition:border-color 0.2s,color 0.2s}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.hero-excl{margin-top:3rem;padding-top:1.75rem;border-top:0.5px solid var(--border);font-size:0.72rem;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase}
+.hero-excl strong{color:var(--gold);font-weight:500}
+.stats-strip{background:var(--gold);padding:1.75rem 2.5rem;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-item{display:flex;flex-direction:column;align-items:center;padding:0.75rem 0;border-right:1px solid rgba(11,15,26,0.15)}
+.stat-item:last-child{border-right:none}
+.stat-number{font-family:"Barlow Condensed",sans-serif;font-size:clamp(2.2rem,4.5vw,3.2rem);font-weight:800;color:var(--ink);line-height:1}
+.stat-label{font-size:0.68rem;font-weight:500;letter-spacing:0.1em;color:rgba(11,15,26,0.58);text-transform:uppercase;text-align:center;margin-top:0.25rem}
+section{padding:5.5rem 2.5rem}
+.si{max-width:920px;margin:0 auto}
+.slabel{font-family:"Barlow Condensed",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;margin-bottom:0.8rem;display:flex;align-items:center;gap:0.65rem}
+.slabel::before{content:"";display:block;width:1.5rem;height:1px;background:var(--gold)}
+h2.stitle{font-family:"Barlow Condensed",sans-serif;font-size:clamp(2rem,5vw,3rem);font-weight:800;line-height:1.05;text-transform:uppercase;margin-bottom:1.4rem}
+h2.stitle em{font-style:normal;color:var(--gold)}
+.sbody{font-size:0.95rem;font-weight:300;line-height:1.78;color:rgba(255,255,255,0.6);max-width:640px}
+.story-sec{background:var(--ink2)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;margin-top:3.5rem;align-items:start}
+.s-acc{background:var(--card-bg);border:0.5px solid var(--border);padding:2rem;position:relative;overflow:hidden}
+.s-acc::before{content:"2003";position:absolute;top:-0.75rem;right:0.75rem;font-family:"Barlow Condensed",sans-serif;font-size:6rem;font-weight:800;color:rgba(200,151,62,0.06);line-height:1;pointer-events:none}
+.acc-date{font-family:"Barlow Condensed",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.22em;color:var(--gold);text-transform:uppercase;margin-bottom:0.7rem}
+.acc-title{font-family:"Barlow Condensed",sans-serif;font-size:1.45rem;font-weight:800;text-transform:uppercase;margin-bottom:1rem;line-height:1.1}
+.acc-body{font-size:0.86rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.58)}
+.acc-body p{margin-bottom:0.8rem}
+.acc-body p:last-child{margin-bottom:0}
+.acc-body strong{color:var(--white);font-weight:500}
+.s-right{display:flex;flex-direction:column;gap:2rem}
+.sbt{font-family:"Barlow Condensed",sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--gold);margin-bottom:0.55rem}
+.sbb{font-size:0.86rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.58)}
+.pullquote{background:var(--gold);padding:1.5rem 1.75rem}
+.pq-text{font-family:"Barlow Condensed",sans-serif;font-size:1.45rem;font-weight:700;line-height:1.15;color:var(--ink);text-transform:uppercase}
+.pq-attr{margin-top:0.7rem;font-size:0.7rem;font-weight:500;letter-spacing:0.12em;color:rgba(11,15,26,0.48);text-transform:uppercase}
+.midas-sec{background:var(--ink)}
+.br-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;margin-top:2.5rem;border:0.5px solid var(--border)}
+.br-card{background:var(--card-bg);padding:1.75rem 1.25rem;border-right:0.5px solid var(--border);transition:background 0.2s;text-align:center}
+.br-card:last-child{border-right:none}
+.br-card:hover{background:var(--gold-dim)}
+.br-num{font-family:"Barlow Condensed",sans-serif;font-size:2rem;font-weight:800;color:rgba(200,151,62,0.18);line-height:1;margin-bottom:0.35rem}
+.br-name{font-family:"Barlow Condensed",sans-serif;font-size:0.95rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--gold);margin-bottom:0.5rem}
+.br-body{font-size:0.76rem;font-weight:300;line-height:1.55;color:rgba(255,255,255,0.48)}
+.human-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;margin-top:1px;border:0.5px solid var(--border);border-top:none}
+.h-item{background:rgba(200,151,62,0.05);padding:0.9rem 1rem;border-right:0.5px solid var(--border);text-align:center}
+.h-item:last-child{border-right:none}
+.h-letter{font-family:"Barlow Condensed",sans-serif;font-size:1.6rem;font-weight:800;color:var(--gold);line-height:1;margin-bottom:0.2rem}
+.h-word{font-size:0.68rem;font-weight:300;letter-spacing:0.1em;color:rgba(255,255,255,0.4);text-transform:uppercase}
+.keys-row{display:flex;gap:1rem;margin-top:2rem;align-items:stretch}
+.key-card{flex:1;background:var(--card-bg);border:0.5px solid var(--border);padding:1.25rem;text-align:center}
+.key-lbl{font-size:0.62rem;letter-spacing:0.18em;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-bottom:0.3rem}
+.key-name{font-family:"Barlow Condensed",sans-serif;font-size:1.05rem;font-weight:700;text-transform:uppercase;color:var(--white)}
+.key-eq{font-family:"Barlow Condensed",sans-serif;font-size:2rem;font-weight:800;color:var(--gold);display:flex;align-items:center;padding:0 0.25rem}
+.key-sp{background:var(--gold);padding:1.25rem 2rem;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.key-sp-lbl{font-size:0.62rem;letter-spacing:0.18em;color:rgba(11,15,26,0.48);text-transform:uppercase;margin-bottom:0.3rem}
+.key-sp-name{font-family:"Barlow Condensed",sans-serif;font-size:1.05rem;font-weight:800;text-transform:uppercase;color:var(--ink)}
+.midas-bridge{margin-top:2rem;padding:1.75rem;border:0.5px solid var(--border);background:var(--gold-dim)}
+.mb-title{font-family:"Barlow Condensed",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.22em;color:var(--gold);text-transform:uppercase;margin-bottom:0.7rem}
+.mb-body{font-size:0.9rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.62)}
+.mb-body strong{color:var(--white);font-weight:500}
+.aud-sec{background:var(--ink2)}
+.aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:3rem;border:0.5px solid var(--border)}
+.aud-card{background:var(--card-bg);padding:2rem 1.5rem;border-right:0.5px solid var(--border);transition:background 0.2s}
+.aud-card:last-child{border-right:none}
+.aud-card:hover{background:var(--gold-dim)}
+.aud-icon{font-size:1.4rem;margin-bottom:0.85rem;display:block}
+.aud-title{font-family:"Barlow Condensed",sans-serif;font-size:1.05rem;font-weight:700;text-transform:uppercase;margin-bottom:0.5rem;color:var(--gold)}
+.aud-desc{font-size:0.82rem;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.56)}
+.bhtag{display:inline-block;background:var(--gold);color:var(--ink);font-size:0.58rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:0.2rem 0.5rem;margin-bottom:0.55rem}
+.ben-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:3.5rem}
+.ben-card{background:var(--card-bg);border:0.5px solid var(--border);padding:2rem;position:relative;overflow:hidden}
+.ben-card::before{content:"";position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
+.ben-num{font-family:"Barlow Condensed",sans-serif;font-size:3.5rem;font-weight:800;color:rgba(200,151,62,0.07);line-height:1;position:absolute;right:1.25rem;top:1.25rem}
+.ben-title{font-family:"Barlow Condensed",sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;margin-bottom:0.7rem;position:relative;z-index:1}
+.ben-body{font-size:0.85rem;font-weight:300;line-height:1.72;color:rgba(255,255,255,0.56);position:relative;z-index:1}
+.ben-stat{margin-top:0.85rem;font-family:"Barlow Condensed",sans-serif;font-size:0.76rem;font-weight:600;color:var(--gold);letter-spacing:0.08em;text-transform:uppercase}
+.how-sec{background:var(--ink2)}
+.steps{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:3.5rem;border:0.5px solid var(--border)}
+.step{padding:2.25rem 2rem;border-right:0.5px solid var(--border)}
+.step:last-child{border-right:none}
+.step-num{font-family:"Barlow Condensed",sans-serif;font-size:3.5rem;font-weight:800;color:rgba(200,151,62,0.1);line-height:1;margin-bottom:0.85rem}
+.step-title{font-family:"Barlow Condensed",sans-serif;font-size:1.05rem;font-weight:700;text-transform:uppercase;margin-bottom:0.6rem}
+.step-body{font-size:0.83rem;font-weight:300;line-height:1.7;color:rgba(255,255,255,0.52)}
+.bh-sec{background:var(--gold);padding:4rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+.bh-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:"Barlow Condensed",sans-serif;font-size:clamp(5rem,18vw,14rem);font-weight:800;color:rgba(11,15,26,0.05);white-space:nowrap;pointer-events:none;text-transform:uppercase}
+.bh-inner{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.bh-label{font-family:"Barlow Condensed",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.28em;color:rgba(11,15,26,0.42);text-transform:uppercase;margin-bottom:1rem}
+h2.bh-hl{font-family:"Barlow Condensed",sans-serif;font-size:clamp(2rem,6vw,4.5rem);font-weight:800;text-transform:uppercase;line-height:0.95;color:var(--ink);margin-bottom:1.5rem}
+.bh-body{font-size:0.97rem;font-weight:300;line-height:1.72;color:rgba(11,15,26,0.65)}
+.tr-sec{background:var(--ink)}
+.tr-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;margin-top:3rem;align-items:center}
+.tr-quote{font-family:"Barlow Condensed",sans-serif;font-size:clamp(1.9rem,4.2vw,2.8rem);font-weight:800;text-transform:uppercase;line-height:1.05}
+.tr-quote em{font-style:normal;color:var(--gold)}
+.tr-attr{margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;color:rgba(255,255,255,0.32);text-transform:uppercase}
+.tr-right{display:flex;flex-direction:column;gap:1.1rem}
+.tr-point{display:flex;gap:0.9rem;align-items:flex-start;padding:1.2rem;border:0.5px solid var(--border);background:var(--card-bg)}
+.tr-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:0.47rem}
+.tr-body{font-size:0.84rem;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.6)}
+.tr-body strong{color:var(--white);font-weight:500}
+.sci-sec{background:var(--ink2)}
+.sci-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3.5rem;align-items:start}
+.sci-claim{margin-bottom:1.75rem;padding-left:1.25rem;border-left:2px solid var(--gold)}
+.sci-claim:last-child{margin-bottom:0}
+.sci-ct{font-family:"Barlow Condensed",sans-serif;font-size:0.97rem;font-weight:700;text-transform:uppercase;margin-bottom:0.35rem}
+.sci-cb{font-size:0.82rem;font-weight:300;line-height:1.68;color:rgba(255,255,255,0.54)}
+.sci-lab{background:var(--gold-dim);border:0.5px solid var(--border);padding:1.75rem}
+.sci-lab-title{font-family:"Barlow Condensed",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.22em;color:var(--gold);text-transform:uppercase;margin-bottom:1.1rem}
+.sci-lab-body{font-size:0.83rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.56)}
+.sci-lab-body strong{color:var(--gold);font-weight:500}
+.sci-lab-body p{margin-bottom:0.85rem}
+.sci-lab-body p:last-child{margin-bottom:0}
+.pm-sec{background:var(--ink);padding:4.5rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+.pm-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:"Barlow Condensed",sans-serif;font-size:clamp(3rem,10vw,9rem);font-weight:800;color:rgba(200,151,62,0.04);white-space:nowrap;pointer-events:none;text-transform:uppercase}
+.pm-inner{position:relative;z-index:1;max-width:680px;margin:0 auto}
+.pm-label{font-family:"Barlow Condensed",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem}
+.pm-hl{font-family:"Barlow Condensed",sans-serif;font-size:clamp(2.5rem,7vw,5rem);font-weight:800;text-transform:uppercase;line-height:0.95;margin-bottom:1.5rem;color:var(--white)}
+.pm-hl em{font-style:normal;color:var(--gold)}
+.pm-body{font-size:0.95rem;font-weight:300;line-height:1.72;color:rgba(255,255,255,0.6)}
+.testi-sec{background:var(--ink2)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
+.testi-card{background:var(--card-bg);border:0.5px solid var(--border);padding:2rem;display:flex;flex-direction:column}
+.testi-q{font-size:0.87rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.6);margin-bottom:1.5rem;font-style:italic;flex:1}
+.testi-a{font-family:"Barlow Condensed",sans-serif;font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--gold)}
+.testi-note{margin-top:0.4rem;font-size:0.7rem;color:rgba(255,255,255,0.22);font-style:normal}
+.about-sec{background:var(--ink)}
+.about-grid{display:grid;grid-template-columns:5fr 7fr;gap:4rem;margin-top:3.5rem;align-items:start}
+.about-portrait{aspect-ratio:3/4;background:var(--ink2);border:0.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.65rem;color:rgba(255,255,255,0.17);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.1rem}
+.portrait-icon{font-size:2.5rem}
+.midas-badge{background:var(--gold);padding:0.9rem 1.2rem}
+.mb-lbl{font-size:0.62rem;letter-spacing:0.18em;color:rgba(11,15,26,0.48);text-transform:uppercase;margin-bottom:0.2rem}
+.mb-name{font-family:"Barlow Condensed",sans-serif;font-size:1.05rem;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.05em}
+.about-name{font-family:"Barlow Condensed",sans-serif;font-size:clamp(2.2rem,4vw,3rem);font-weight:800;text-transform:uppercase;line-height:1;margin-bottom:0.3rem}
+.about-title{font-family:"Barlow Condensed",sans-serif;font-size:0.87rem;font-weight:600;letter-spacing:0.12em;color:var(--gold);text-transform:uppercase;margin-bottom:1.75rem}
+.about-body{font-size:0.91rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,0.6);margin-bottom:1.4rem}
+.creds{display:flex;flex-direction:column;gap:0.6rem}
+.cred{display:flex;align-items:flex-start;gap:0.85rem;padding:0.7rem 1rem;border:0.5px solid var(--border);background:var(--card-bg)}
+.cred-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:0.48rem}
+.cred-text{font-size:0.82rem;font-weight:300;line-height:1.55;color:rgba(255,255,255,0.58)}
+.cred-text strong{color:var(--white);font-weight:500}
+.cta-sec{background:var(--gold);padding:6rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+.cta-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:"Barlow Condensed",sans-serif;font-size:clamp(6rem,22vw,18rem);font-weight:800;color:rgba(11,15,26,0.05);pointer-events:none;white-space:nowrap}
+.cta-inner{position:relative;z-index:1}
+.cta-eyebrow{font-family:"Barlow Condensed",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.28em;color:rgba(11,15,26,0.42);text-transform:uppercase;margin-bottom:1rem}
+h2.cta-hl{font-family:"Barlow Condensed",sans-serif;font-size:clamp(2.8rem,8vw,6rem);font-weight:800;text-transform:uppercase;line-height:0.92;color:var(--ink);margin-bottom:1.75rem}
+.cta-sub{font-size:1rem;font-weight:300;color:rgba(11,15,26,0.62);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-dark{background:var(--ink);color:var(--white);font-family:"DM Sans",sans-serif;font-weight:500;font-size:0.92rem;padding:0.9rem 2.2rem;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s}
+.btn-dark:hover{background:var(--ink2)}
+.btn-outline-dark{background:transparent;color:var(--ink);font-family:"DM Sans",sans-serif;font-weight:400;font-size:0.92rem;padding:0.9rem 2.2rem;border:1.5px solid var(--ink);cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s,color 0.2s}
+.btn-outline-dark:hover{background:var(--ink);color:var(--white)}
+.cta-loc{margin-top:2rem;font-size:0.7rem;color:rgba(11,15,26,0.38);letter-spacing:0.1em;text-transform:uppercase}
+footer{background:var(--ink);padding:1.75rem 2.5rem;border-top:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:"Barlow Condensed",sans-serif;font-size:0.92rem;font-weight:700;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase}
+.footer-contact{font-size:0.76rem;color:rgba(255,255,255,0.32)}
+.footer-contact a{color:rgba(255,255,255,0.48);text-decoration:none}
+.footer-contact a:hover{color:var(--gold)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.fu{animation:fadeUp 0.65s ease both}
+.d1{animation-delay:0.12s}.d2{animation-delay:0.26s}.d3{animation-delay:0.4s}.d4{animation-delay:0.55s}
+@media(max-width:900px){
+  .steps,.sci-grid,.tr-grid,.story-grid,.about-grid{grid-template-columns:1fr;gap:2rem}
+  .step{border-right:none;border-bottom:0.5px solid var(--border)}
+  .about-portrait{aspect-ratio:unset;height:180px}
+  .br-grid,.human-strip{grid-template-columns:1fr 1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .keys-row{flex-wrap:wrap}
+  .key-eq{display:none}
+}
+@media(max-width:680px){
+  nav{padding:1rem 1.25rem}
+  section{padding:4rem 1.25rem}
+  .hero{padding:7rem 1.25rem 4rem}
+  .stats-strip{grid-template-columns:1fr 1fr;padding:1.5rem 1.25rem}
+  .stat-item{border-right:none}
+  .ben-grid,.aud-grid{grid-template-columns:1fr}
+  .aud-card{border-right:none;border-bottom:0.5px solid var(--border)}
+  .br-grid,.human-strip{grid-template-columns:1fr}
+  .br-card,.h-item{border-right:none;border-bottom:0.5px solid var(--border)}
+  .bh-sec,.pm-sec,.cta-sec{padding:4rem 1.25rem}
+  footer{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-left">
+    <div class="nav-brand">Brandon Kelley</div>
+    <div class="nav-sub">G-NAT Level 3 &middot; Midas Touch Movement &middot; Albury NSW</div>
+  </div>
+  <a href="#contact" class="nav-cta">Book a Session</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-vline"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow fu">Australia's Pioneer in Vertical Movement &mdash; Albury, NSW</div>
+    <h1 class="hero-headline fu d1">6 Minutes.<br><em>Every Muscle.</em><br>Zero<br>Joint Damage.</h1>
+    <p class="hero-sub fu d2">Most people stop exercising because it hurts or takes too long. G-NAT solves both &mdash; a full-body workout in 6 to 12 minutes that decompresses your joints while activating 200+ muscles simultaneously.</p>
+    <p class="hero-quote fu d2">&ldquo;I used to train six hours a day, every day. The day I found G-NAT, it dropped to under an hour total &mdash; and my wife couldn't believe it. She said, 'That's not what happened. That's different.'&rdquo; &mdash; Brandon Kelley</p>
+    <div class="hero-cta-row fu d3">
+      <a href="#contact" class="btn-primary">Book Your First Session</a>
+      <a href="#how" class="btn-ghost">See How It Works</a>
+    </div>
+    <div class="hero-excl fu d4"><strong>Only two G-NAT units in Australia &mdash; both here in Albury.</strong> &nbsp;&middot;&nbsp; Level 3 Certified &nbsp;&middot;&nbsp; Midas Touch Movement Founder</div>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="stat-item"><div class="stat-number">6&ndash;12</div><div class="stat-label">Minutes for a Full Workout</div></div>
+  <div class="stat-item"><div class="stat-number">200+</div><div class="stat-label">Muscles Activated at Once</div></div>
+  <div class="stat-item"><div class="stat-number">57%</div><div class="stat-label">Higher Metabolism 1hr After</div></div>
+  <div class="stat-item"><div class="stat-number">2</div><div class="stat-label">G-NAT Units in All of Australia</div></div>
+</div>
+
+<section class="story-sec">
+  <div class="si">
+    <div class="slabel">The Origin Story</div>
+    <h2 class="stitle">From Near Death<br><em>to Perfect Machine</em></h2>
+    <div class="story-grid">
+      <div class="s-acc">
+        <div class="acc-date">October 21, 2003 &mdash; Denver, Colorado</div>
+        <div class="acc-title">The Accident That Changed Everything</div>
+        <div class="acc-body">
+          <p>Brandon crashed a motorcycle at over 100 miles an hour. No helmet. He hit a tree, bounced off a rod-iron fence lining a cemetery, and shattered &mdash; breaking his arm, leg, and snapping his pelvis in half.</p>
+          <p>More critically: he <strong>severed his femoral artery</strong> &mdash; one of the largest in the human body &mdash; and suffered a severe traumatic brain injury. The medical staff at Denver Health told his family it was a very big &ldquo;if&rdquo; he would survive.</p>
+          <p>Every department chief was pulled into an emergency meeting. That meeting was interrupted to have everyone scrub in for surgery. It took nearly every department head to save his life.</p>
+          <p>He survived. And what he discovered rebuilding himself became the foundation of everything he now teaches.</p>
+        </div>
+      </div>
+      <div class="s-right">
+        <div>
+          <div class="sbt">You Are a Perfect Machine</div>
+          <div class="sbb">Rebuilding from TBI, fractured bones and a severed femoral artery forced Brandon into a first-principles understanding of the human body. Not as a machine that breaks, but as the most mechanically advanced organism on the planet. You have everything you need already inside you. That revelation became the <em>Being Human Handbook</em> and the Midas Touch Movement.</div>
+        </div>
+        <div>
+          <div class="sbt">Then He Found G-NAT</div>
+          <div class="sbb">When Brandon discovered the G-NAT Vertical Movement System, he recognised it immediately: the physical tool that activated everything he had spent years teaching. A system that involuntarily recruits every motor muscle, decompresses joints and retrains the nervous system &mdash; without fear, cortisol or damage. Two frameworks became one.</div>
+        </div>
+        <div class="pullquote">
+          <div class="pq-text">The G-NAT is a trainer's dream. The minute we hit six minutes, my job is done.</div>
+          <div class="pq-attr">Brandon Kelley &mdash; G-NAT Level 3, Albury NSW</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="midas-sec">
+  <div class="si">
+    <div class="slabel">The Being Human Framework</div>
+    <h2 class="stitle">Your 5 Human Birthrights &mdash;<br><em>G-NAT Activates All of Them</em></h2>
+    <p class="sbody">Brandon's Midas Touch Movement teaches that every human is born with five birthrights. G-NAT is the physical training system that exercises and integrates all five simultaneously &mdash; in 6 to 12 minutes.</p>
+    <div class="br-grid">
+      <div class="br-card"><div class="br-num">01</div><div class="br-name">Energy</div><div class="br-body">You are connected to limitless energy. G-NAT activates every motor muscle simultaneously &mdash; creating a 24-hour calorie-burning state after each session.</div></div>
+      <div class="br-card"><div class="br-num">02</div><div class="br-name">Power</div><div class="br-body">Power is the capacity to do any task. Vertical training involuntarily recruits 200+ muscles &mdash; building integrated power that transfers to sport, work and life.</div></div>
+      <div class="br-card"><div class="br-num">03</div><div class="br-name">Strength</div><div class="br-body">Strength is permanence under force. G-NAT loads every tensional line &mdash; hand to foot, head to foot &mdash; building structural strength isolation training cannot reach.</div></div>
+      <div class="br-card"><div class="br-num">04</div><div class="br-name">Control</div><div class="br-body">Control allows you to navigate the world. G-NAT retrains the nervous system &mdash; restoring brain-to-muscle pathways that injury, age and inactivity have suppressed.</div></div>
+      <div class="br-card"><div class="br-num">05</div><div class="br-name">Balance</div><div class="br-body">Life seeks homeostasis. Vertical training &mdash; by preventing equilibrium &mdash; forces the body to continuously recalibrate, developing real-world balance and stability.</div></div>
+    </div>
+    <div class="human-strip">
+      <div class="h-item"><div class="h-letter">H</div><div class="h-word">Humble</div></div>
+      <div class="h-item"><div class="h-letter">U</div><div class="h-word">Union</div></div>
+      <div class="h-item"><div class="h-letter">M</div><div class="h-word">Manifesting</div></div>
+      <div class="h-item"><div class="h-letter">A</div><div class="h-word">Awareness</div></div>
+      <div class="h-item"><div class="h-letter">N</div><div class="h-word">Now</div></div>
+    </div>
+    <div class="keys-row">
+      <div class="key-card"><div class="key-lbl">Key 1</div><div class="key-name">Attention</div></div>
+      <div class="key-card"><div class="key-lbl">Key 2</div><div class="key-name">Recognition</div></div>
+      <div class="key-card"><div class="key-lbl">Key 3</div><div class="key-name">Modification</div></div>
+      <div class="key-eq">=</div>
+      <div class="key-sp"><div class="key-sp-lbl">Your</div><div class="key-sp-name">Superpower</div></div>
+    </div>
+    <div class="midas-bridge">
+      <div class="mb-title">How the Two Frameworks Unite</div>
+      <div class="mb-body">Brandon brings two complete systems to every session. The <strong>Being Human Handbook</strong> gives him a deep understanding of why your body moves and responds the way it does &mdash; physically, mentally, emotionally. The <strong>G-NAT system</strong> gives him the most efficient physical tool available to activate those responses. You're not just training your body. You're retraining the entire system.</div>
+    </div>
+  </div>
+</section>
+
+<section class="aud-sec">
+  <div class="si">
+    <div class="slabel">Who This Is For</div>
+    <h2 class="stitle">If You've Stopped Exercising,<br><em>This Was Built for You</em></h2>
+    <div class="aud-grid">
+      <div class="aud-card">
+        <span class="aud-icon">&#x1F504;</span>
+        <div class="aud-title">Rehab &amp; Recovery</div>
+        <div class="aud-desc">Decompresses joints while strengthening surrounding muscles. Used by physiotherapy clinics. People with bone-on-bone conditions train pain-free &mdash; often for the first time in years. Brandon knows this territory personally.</div>
+      </div>
+      <div class="aud-card">
+        <span class="aud-icon">&#x1F3C3;</span>
+        <div class="aud-title">Athletes</div>
+        <div class="aud-desc">Activates complete tensional chains the way sport does. Improves speed, power, coordination and reduces injury risk in a fraction of normal training time. No warmup required before anything Brandon throws at you.</div>
+      </div>
+      <div class="aud-card">
+        <span class="aud-icon">&#x231A;</span>
+        <div class="aud-title">Busy Professionals</div>
+        <div class="aud-desc">A complete workout in 6 to 12 minutes with an afterburn lasting 24 hours. Brandon trained 6 hours a day before G-NAT. Now under an hour total &mdash; with better results. Your time problem has a solution.</div>
+      </div>
+      <div class="aud-card">
+        <span class="aud-icon">&#x26A1;</span>
+        <div class="aud-title">Biohackers</div>
+        <div class="aud-desc"><span class="bhtag">New Frontier</span><br>Physically hacking the sympathetic nervous system &mdash; all the benefit of Fight-or-Flight activation, zero cortisol, zero hormonal discharge. Brandon believes this is the most underexplored performance frontier in existence.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="si">
+    <div class="slabel">What Changes</div>
+    <h2 class="stitle">What Training Vertically<br><em>Actually Does to Your Body</em></h2>
+    <div class="ben-grid">
+      <div class="ben-card"><div class="ben-num">01</div><div class="ben-title">Your Joints Decompress While Your Muscles Strengthen</div><div class="ben-body">Traditional exercise compresses joints. G-NAT decompresses them from hand to foot while simultaneously loading the surrounding muscles. People with bone-on-bone damage regularly train without pain &mdash; and progressively reduce it.</div><div class="ben-stat">&rarr; Zero joint compression under load</div></div>
+      <div class="ben-card"><div class="ben-num">02</div><div class="ben-title">200+ Muscles Fire Simultaneously &mdash; Involuntarily</div><div class="ben-body">Standard training recruits 5&ndash;10 muscles per movement. G-NAT triggers a physical sympathetic response that puts all 603 motor muscles on standby &mdash; 200+ actively recruited &mdash; without fear, adrenaline, or cortisol. You don't choose to do it. It just happens.</div><div class="ben-stat">&rarr; Full-body recruitment, not regional isolation</div></div>
+      <div class="ben-card"><div class="ben-num">03</div><div class="ben-title">Your Body Burns Energy for 24 Hours After You Stop</div><div class="ben-body">It's not simply &ldquo;fat burning&rdquo; &mdash; it's the energy required to restore oxygen to 200+ muscles simultaneously. Every muscle demands recovery at once. That process runs at an elevated rate for over 24 hours. You become a calorie-burning inferno long after the session ends.</div><div class="ben-stat">&rarr; 57% higher metabolism 1hr post &middot; 24% at 24hrs</div></div>
+      <div class="ben-card"><div class="ben-num">04</div><div class="ben-title">Your Nervous System Retains What It Learns</div><div class="ben-body">G-NAT retrains the nervous system &mdash; brain to muscle, not just muscle to brain. Coordination, balance, reflexes and posture carry into everyday movement. Especially significant for TBI recovery and post-surgical rehab. Brandon lived this personally.</div><div class="ben-stat">&rarr; Neurological adaptation, not just muscular gain</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="how-sec" id="how">
+  <div class="si">
+    <div class="slabel">The Mechanism</div>
+    <h2 class="stitle">Everything Changes<br><em>When You Go Vertical</em></h2>
+    <p class="sbody">It's not the way you're used to working out &mdash; and that's the entire point. When everything is activated at once, everything has to change.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">01</div><div class="step-title">You Mount the Vertical System</div><div class="step-body">Fingers on the bar, feet on the steps. The moment your torso shifts off vertical equilibrium, your nervous system physically confirms a threat. Not from fear &mdash; from physics. All 603 motor muscles come online involuntarily. You don't have to choose to do it.</div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-title">The Sympathetic Response Fires &mdash; Without the Baggage</div><div class="step-body">You get all the strength and motor recruitment of a Fight-or-Flight response &mdash; none of the cortisol, hormonal discharge, or emotional trauma. We initiate those primal survival instincts and sidestep every negative side effect. This is a genuine hack of the nervous system.</div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-title">Brandon Guides 12 Life Movements in 6&ndash;12 Minutes</div><div class="step-body">The 12 Life Movements exhaust every tensional line &mdash; hand to foot, head to foot &mdash; ensuring every muscle is extended, contracted, flushed and fortified. Then the afterburn runs for the next 24 hours. Brandon's job at the 6-minute mark is effectively done.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="bh-sec">
+  <div class="bh-bg">HACK</div>
+  <div class="bh-inner">
+    <div class="bh-label">For the Biohacker</div>
+    <h2 class="bh-hl">Hacking the<br>Sympathetic<br>Nervous System</h2>
+    <p class="bh-body">We initiate your body's primal survival instincts &mdash; with no hormonal discharge and no emotional trauma. You access all the benefits of Fight-or-Flight: every motor muscle recruited, heightened strength and neurological response &mdash; with none of the negative side effects. Before G-NAT, accessing this state without psychological damage simply wasn't possible. Now it is. Brandon believes this frontier hasn't yet been fully mapped &mdash; and he intends to map it here in Australia.</p>
+  </div>
+</section>
+
+<section class="tr-sec">
+  <div class="si">
+    <div class="slabel">The Trainer's Perspective</div>
+    <div class="tr-grid">
+      <div>
+        <div class="tr-quote">&ldquo;Without G-NAT, I'm a <em>very different</em> trainer. This is a trainer's dream.&rdquo;</div>
+        <div class="tr-attr">Brandon Kelley &mdash; G-NAT Level 3, Albury NSW</div>
+      </div>
+      <div class="tr-right">
+        <div class="tr-point"><div class="tr-dot"></div><div class="tr-body"><strong>No warm-up required.</strong> G-NAT activates your entire system in the first movement. Brandon goes straight into demanding work knowing your whole body is already fully online.</div></div>
+        <div class="tr-point"><div class="tr-dot"></div><div class="tr-body"><strong>Zero injury risk from being pushed.</strong> With full-body tensional activation, there's nothing isolated left to tear, pinch or aggravate. The whole kinetic chain is involved &mdash; hand to foot, foot to foot. Brandon can freely throw you into anything.</div></div>
+        <div class="tr-point"><div class="tr-dot"></div><div class="tr-body"><strong>Done at 6 minutes.</strong> At the 6-minute mark, the physical work is complete. The afterburn runs for 24 hours. There's nothing left to do &mdash; your body does the rest.</div></div>
+        <div class="tr-point"><div class="tr-dot"></div><div class="tr-body"><strong>Works for every body.</strong> From a first-time mover to an elite competitor &mdash; the same physiological response. Brandon has trained TBI recovery patients and high-performance athletes on the same machine in the same week.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sci-sec">
+  <div class="si">
+    <div class="slabel">The Science</div>
+    <h2 class="stitle">Nearly Two Decades of R&amp;D.<br><em>Independently Verified.</em></h2>
+    <div class="sci-grid">
+      <div>
+        <div class="sci-claim"><div class="sci-ct">Sympathetic Activation Without Emotional Trigger</div><div class="sci-cb">Vertical posture physically triggers the sympathetic nervous system &mdash; all 603 motor muscles on standby &mdash; without cortisol, elevated resting heart rate, or the adrenal discharge of a fear-based Fight-or-Flight response.</div></div>
+        <div class="sci-claim"><div class="sci-ct">Global Muscular Integration Along Tensional Lines</div><div class="sci-cb">True functional training must engage complete tensional lines &mdash; contiguous muscle chains from one limb through the torso to another. G-NAT is the only system designed to activate these lines involuntarily and simultaneously.</div></div>
+        <div class="sci-claim"><div class="sci-ct">EPOC &mdash; Oxygen Restoration, Not Just Fat Burning</div><div class="sci-cb">When 200+ muscles need to restore oxygen simultaneously, the body's energy demand stays elevated for up to 24 hours. It's the energy cost of bringing your entire system back to normal. You burn 2,000 calories in a day &mdash; you'll be running at 3,000 pace through the following day.</div></div>
+        <div class="sci-claim"><div class="sci-ct">Brandon Is Pursuing an Australian Study</div><div class="sci-cb">The US lab extended their study by six unpaid weeks because the results exceeded expectations. Brandon is actively working to establish equivalent independent verification here in Australia.</div></div>
+      </div>
+      <div class="sci-lab">
+        <div class="sci-lab-title">Independent Laboratory Findings &mdash; Welltec Human Performance Lab, USA</div>
+        <div class="sci-lab-body">
+          <p>The G-NAT Effectiveness Review assessed CNS response, balance and stability, metabolic output, orthopedics and joint impact. The lab asked for six additional weeks beyond their contracted window &mdash; unpaid &mdash; because they were discovering more than expected.</p>
+          <p><strong>Metabolism increased 57%</strong> one hour after a standard G-NAT session. <strong>24% above baseline</strong> remained twenty-four hours later &mdash; results not observed in any comparable horizontal exercise protocol.</p>
+          <p><strong>Joint compression forces were measurably lower</strong> during G-NAT movements than equivalent horizontal exercises, while surrounding muscle activation was significantly higher.</p>
+          <p><strong>Balance, coordination and neurological response times</strong> all improved within the testing window &mdash; confirming nervous system adaptation beyond simple strength gains.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pm-sec">
+  <div class="pm-bg">PERFECT MACHINE</div>
+  <div class="pm-inner">
+    <div class="pm-label">Brandon's Core Philosophy</div>
+    <div class="pm-hl">You Are<br><em>a Perfect Machine</em></div>
+    <p class="pm-body">You are the most mechanically advanced organism on this planet. You have been preciously and precisely placed in this space and time. You have EVERYTHING you need to unleash your potential. Every G-NAT session is Brandon activating what was already yours.</p>
+  </div>
+</section>
+
+<section class="testi-sec">
+  <div class="si">
+    <div class="slabel">From the Session Floor</div>
+    <h2 class="stitle">What Happens When<br><em>People Get On It</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p class="testi-q">I had been told I could no longer train competitively after my knee surgery. Six weeks with Brandon and I'm back. The fact that my joints feel better after a session than before is something I'd never experienced with any other training.</p>
+        <div class="testi-a">Competitive Athlete, Border Region</div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-q">I'm a GP and I was sceptical. Eight sessions later, my lower back pain &mdash; which I've had for a decade &mdash; has reduced significantly. I've referred three patients. The science holds up and the results are faster than I expected.</p>
+        <div class="testi-a">Medical Professional, Albury</div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-q">I run a business and have two young kids. I had maybe 20 minutes a week for exercise. Twelve minutes with Brandon twice a week is more effective than the full gym routine I had before. I'm fitter than I was at 30.</p>
+        <div class="testi-a">Business Owner, Wodonga</div>
+        <div class="testi-note">Replace with real client words &mdash; just run Otter AI next session.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-sec" id="about">
+  <div class="si">
+    <div class="slabel">Your Trainer</div>
+    <div class="about-grid">
+      <div>
+        <div class="about-portrait">
+          <div class="portrait-icon">&#x1F464;</div>
+          <span>Add your photo here</span>
+        </div>
+        <div class="midas-badge">
+          <div class="mb-lbl">Founder</div>
+          <div class="mb-name">Midas Touch Movement</div>
+        </div>
+      </div>
+      <div>
+        <div class="about-name">Brandon Kelley</div>
+        <div class="about-title">G-NAT Level 3 &nbsp;&middot;&nbsp; Australia's Pioneer in Vertical Movement &nbsp;&middot;&nbsp; Albury NSW</div>
+        <p class="about-body">Brandon Kelley is the only G-NAT Level 3 certified trainer in Australia &mdash; operating the only two G-NAT Vertical Movement Systems in the country, both based in Albury, NSW. Level 3 is the highest practitioner certification, covering rehabilitation, sports performance, TBI recovery, and advanced protocol design.</p>
+        <p class="about-body">His philosophy didn't come from a textbook. After nearly dying in a motorcycle crash in 2003 &mdash; severing his femoral artery and sustaining a severe TBI &mdash; Brandon rebuilt himself from first principles and wrote the <em>Being Human Handbook</em> as a result. The G-NAT system is the physical expression of everything he discovered in that process.</p>
+        <p class="about-body">He works with clients across the full spectrum: post-surgical rehabilitation, chronic joint conditions, TBI recovery, elite athletes, and time-strapped professionals. Every session is built around who you are &mdash; not a template.</p>
+        <div class="creds">
+          <div class="cred"><div class="cred-dot"></div><div class="cred-text"><strong>G-NAT Level 3 Certification</strong> &mdash; highest practitioner qualification: rehab, performance, neurological recovery and advanced protocol design</div></div>
+          <div class="cred"><div class="cred-dot"></div><div class="cred-text"><strong>Author, Being Human Handbook</strong> &mdash; Midas Touch Movement: 5 Birthrights, H.U.M.A.N. framework, 3 Keys to your Superpower, the Perfect Machine philosophy</div></div>
+          <div class="cred"><div class="cred-dot"></div><div class="cred-text"><strong>Exclusive equipment access</strong> &mdash; both G-NAT units in Australia, giving clients access unavailable anywhere else in the country</div></div>
+          <div class="cred"><div class="cred-dot"></div><div class="cred-text"><strong>Personal lived experience</strong> &mdash; TBI recovery, femoral artery reconstruction, full musculoskeletal rebuild. He has trained on both sides of the table.</div></div>
+          <div class="cred"><div class="cred-dot"></div><div class="cred-text"><strong>Albury, NSW</strong> &mdash; serving the Border region; enquiries from regional and interstate clients welcome</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-sec" id="contact">
+  <div class="cta-bg">FREE SESSION</div>
+  <div class="cta-inner">
+    <div class="cta-eyebrow">Ready to Train</div>
+    <h2 class="cta-hl">Start With One<br>Free Session</h2>
+    <p class="cta-sub">Experience the G-NAT system yourself before you commit to anything. One session. No pressure. You'll feel the difference in the first 10 minutes &mdash; Brandon guarantees it.</p>
+    <div class="cta-btns">
+      <a href="tel:+61XXXXXXXXXX" class="btn-dark">Call Brandon</a>
+      <a href="mailto:brandon@example.com" class="btn-outline-dark">Send an Enquiry</a>
+    </div>
+    <div class="cta-loc">Albury, NSW &nbsp;&middot;&nbsp; Individual &middot; Group &middot; Corporate Sessions Available</div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">Brandon Kelley &mdash; G-NAT Training &amp; Midas Touch Movement &middot; Albury NSW</div>
+  <div class="footer-contact">G-NAT Level 3 &nbsp;&middot;&nbsp; Australia's Pioneer in Vertical Movement &nbsp;&middot;&nbsp; <a href="https://g-nat.com" target="_blank">g-nat.com</a></div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^=#]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+  })
+});
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}
+  })
+},{threshold:0.08});
+document.querySelectorAll('.ben-card,.aud-card,.step,.sci-claim,.cred,.testi-card,.tr-point,.br-card,.h-item').forEach(el=>{
+  el.style.opacity='0';el.style.transform='translateY(14px)';
+  el.style.transition='opacity 0.45s ease, transform 0.45s ease';
+  obs.observe(el);
+});
+</script>
+</body>
+</html>
